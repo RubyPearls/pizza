@@ -3,3 +3,13 @@
   bottom: 100px;
   left: 300px;
 }
+
+.response {
+  display: none;
+}
+
+#new-order{
+  position: absolute;
+  bottom: 0px;
+  left: 315px;
+}
