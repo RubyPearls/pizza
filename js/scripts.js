@@ -2,13 +2,13 @@ var Pizza = {
   inches: 0,
   toppings: "Pepperoni",
   slices: function() {
-    var division;
+    var cut;
     if (this.toppings === "Pepperoni") {
-      division = .5;
+      cut = .5;
     } else {
-      division = .4;
+      cut = .4;
     }
-    var sliceCounter = Math.round(this.inches * division);
+    var sliceCounter = Math.round(this.inches * cut);
     return sliceCounter;
   }
 };
@@ -23,7 +23,7 @@ $(document).ready(function() {
 
     var newPizza = Object.create(Pizza);
     newPizza.inches = inputtedInches;
-    newPizza.toppingChoice = inputtedTopping;
+    newPizza.toppings = inputtedTopping;
 
     $(".response").hide();
     $(".slices").text(newPizza.slices());
