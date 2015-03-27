@@ -11,7 +11,7 @@ describe("Pizza", function(){
 	     var newPizza = Object.create(Pizza);
 	     newPizza.inches = 12;
 	     newPizza.toppings = "Mozzarella Cheese";
-	     expect(newPizza.slices()).to.equal(8);
+	     expect(newPizza.slices()).to.equal(5);
 	  });
 
     it("will prompt for a number if user enters alphabets", function() {
