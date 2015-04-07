@@ -2,9 +2,7 @@
 
 Welcome to Rose's Pizza!
 
-This calculator will allows the user to input a size to see how many slices they can get for the size. 
-
-This is helpful for your events so that you can see how many people your pizza will feed. 
+This calculator will allows the user to select the topping and see how much it costs! 
 
 ##Author
 
