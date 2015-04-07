@@ -1,15 +1,17 @@
 var Pizza = {
-  inches: 0,
   toppings: "Pepperoni",
-  slices: function() {
-    var cut;
+  
+  cost: function() {
+
+    var price;
+
     if (this.toppings === "Pepperoni") {
-      cut = .5;
+      price = 12;
     } else {
-      cut = .4;
+
+     price = 10;
     }
-    var sliceCounter = Math.round(this.inches * cut);
-    return sliceCounter;
+    return price;
   }
 };
 
@@ -19,14 +21,12 @@ $(document).ready(function() {
     event.preventDefault();
 
     var inputtedTopping = $('select#toppings').val();
-    var inputtedInches = parseInt($('input#inches').val());
 
     var newPizza = Object.create(Pizza);
-    newPizza.inches = inputtedInches;
     newPizza.toppings = inputtedTopping;
 
     $(".response").hide();
-    $(".slices").text(newPizza.slices());
+    $(".cost").text(newPizza.cost().toString());
     $("#new-order").show();
   });
 });
